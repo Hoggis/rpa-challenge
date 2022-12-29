@@ -1,0 +1,6 @@
+robotframework
+robotframework-browser
+rpadriver
+pandas
+openpyxl
+requests
