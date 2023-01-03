@@ -1,7 +1,8 @@
 *** Settings ***
 Variables         ../resources/settings.py    ${env}
+Library           ../variables/variables.py
 Library           TOSLibrary    ${db_server}    ${db_name}
-...               ${DB_CRED_USR}    ${DB_CRED_PSW}    ${db_auth_source}
+...               ${USER_NAME}    ${PASSWORD}    ${db_auth_source}
 Library           ../libraries/RpaChallengeLibrary.py
 Library           ../stages/Stage0.py
 Library           ../stages/Stage1.py

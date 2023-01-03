@@ -1,22 +1,15 @@
 channels:
-  # Define conda channels here.
   - conda-forge
-
 dependencies:
-  # Define conda packages here.
-  # If available, always prefer the conda version of a package.
-  # Installation will be faster and more efficient.
-  # https://anaconda.org/search
-
-  - python=3.9.13            # https://pyreadiness.org/3.9/
-
-  - pip=22.3                 # https://pip.pypa.io/en/stable/news/
+  - python=3.9.13
+  - pip=22.1.2
+  - nodejs=16.4.2
   - pip:
-      # Define pip packages here.
-      # https://pypi.org/
-      - robotframework==6.0.1
-      - robotframework-browser==14.3.0
+      - robotframework-browser==14.2.1
+      - rpaframework==19.4.1
       - rpadriver==1.2.1
       - pandas==1.5.2
       - openpyxl==3.0.10
       - requests==2.28.1
+rccPostInstall:
+  - rfbrowser init

@@ -1,5 +1,5 @@
-robotframework==6.0.1
-robotframework-browser==14.3.0
+robotframework-browser==14.2.1
+rpaframework==19.4.1
 rpadriver==1.2.1
 pandas==1.5.2
 openpyxl==3.0.10
